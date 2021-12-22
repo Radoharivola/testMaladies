@@ -183,21 +183,22 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-	<profile>
-		<activation>
-			<activeByDefault>true</activeByDefault>
-		</activation>
-		<id>local</id>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-devtools</artifactId>
-				<scope>runtime</scope>
-				<optional>true</optional>
-			</dependency>
-		</dependencies>
-	</profile>
+
 	<profiles>
+		<profile>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<id>local</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-devtools</artifactId>
+					<scope>runtime</scope>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
 		<profile>
 			<id>native</id>
 			<properties>
